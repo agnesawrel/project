@@ -1,0 +1,20 @@
+INFO - 2023-06-09 07:55:13 --> CSRF token verified.
+INFO - 2023-06-09 07:55:34 --> CSRF token verified.
+INFO - 2023-06-09 07:56:10 --> CSRF token verified.
+INFO - 2023-06-09 08:33:03 --> CSRF token verified.
+INFO - 2023-06-09 08:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-09 08:33:03 --> Undefined variable $asisten
+in APPPATH\Views\AsistenView.php on line 30.
+ 1 APPPATH\Views\AsistenView.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $asisten', 'D:\\ci-projectArel\\app\\Views\\AsistenView.php', 30)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\ci-projectArel\\app\\Views\\AsistenView.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('AsistenView', [], true)
+ 5 APPPATH\Controllers\AsistenController.php(104): view('AsistenView')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->check()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-09 16:58:39 --> CSRF token verified.
+INFO - 2023-06-09 17:05:17 --> CSRF token verified.
+INFO - 2023-06-09 17:06:56 --> CSRF token verified.

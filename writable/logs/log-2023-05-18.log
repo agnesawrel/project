@@ -1,0 +1,98 @@
+CRITICAL - 2023-05-18 08:15:43 --> Invalid file: "hometodo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('hometodo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('hometodo', [], true)
+ 3 APPPATH\Controllers\Conttodo.php(9): view('hometodo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Conttodo->index()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Conttodo))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 08:15:54 --> Invalid file: "todolistpages/abouttodo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('todolistpages/abouttodo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolistpages/abouttodo', [], true)
+ 3 APPPATH\Controllers\Conttodo.php(14): view('todolistpages/abouttodo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Conttodo->about()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Conttodo))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 08:35:39 --> Undefined variable $title
+in APPPATH\Views\todolayout\headertodo.php on line 11.
+ 1 APPPATH\Views\todolayout\headertodo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolayout/headertodo', [], true)
+ 5 APPPATH\Controllers\Conttodo.php(13): view('todolayout/headertodo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Conttodo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Conttodo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 08:37:10 --> Undefined variable $title
+in APPPATH\Views\todolayout\headertodo.php on line 11.
+ 1 APPPATH\Views\todolayout\headertodo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolayout/headertodo', [], true)
+ 5 APPPATH\Controllers\Conttodo.php(13): view('todolayout/headertodo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Conttodo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Conttodo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 08:37:21 --> Undefined variable $title
+in APPPATH\Views\todolayout\headertodo.php on line 11.
+ 1 APPPATH\Views\todolayout\headertodo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolayout/headertodo', [], true)
+ 5 APPPATH\Controllers\Conttodo.php(13): view('todolayout/headertodo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Conttodo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Conttodo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 08:37:23 --> Undefined variable $title
+in APPPATH\Views\todolayout\headertodo.php on line 11.
+ 1 APPPATH\Views\todolayout\headertodo.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('D:\\ci-projectArel\\app\\Views\\todolayout\\headertodo.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolayout/headertodo', [], true)
+ 5 APPPATH\Controllers\Conttodo.php(13): view('todolayout/headertodo', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Conttodo->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Conttodo))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 09:41:04 --> Invalid file: "todolistpages/tabletodo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('todolistpages/tabletodo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolistpages/tabletodo', [], true)
+ 3 APPPATH\Controllers\Todolist.php(14): view('todolistpages/tabletodo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Todolist->table()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 09:44:10 --> Invalid file: "todolistpages/tabletodo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('todolistpages/tabletodo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolistpages/tabletodo', [], true)
+ 3 APPPATH\Controllers\Todolist.php(14): view('todolistpages/tabletodo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Todolist->table()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-18 09:45:22 --> Invalid file: "todolistpages/tabletodo.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('todolistpages/tabletodo.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('todolistpages/tabletodo', [], true)
+ 3 APPPATH\Controllers\Todolist.php(14): view('todolistpages/tabletodo')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Todolist->table()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Todolist))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')

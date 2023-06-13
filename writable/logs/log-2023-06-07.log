@@ -1,0 +1,399 @@
+INFO - 2023-06-07 02:54:32 --> CSRF token verified.
+INFO - 2023-06-07 07:23:32 --> CSRF token verified.
+CRITICAL - 2023-06-07 07:23:32 --> Invalid file: "login/fail.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login/fail.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('login/fail', [], true)
+ 3 APPPATH\Controllers\Login.php(26): view('login/fail')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\login->check()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\login))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 07:24:12 --> CSRF token verified.
+CRITICAL - 2023-06-07 07:24:45 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login/check', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 07:24:58 --> CSRF token verified.
+INFO - 2023-06-07 07:25:10 --> CSRF token verified.
+INFO - 2023-06-07 07:25:21 --> CSRF token verified.
+INFO - 2023-06-07 07:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:42:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:42:44 --> CSRF token verified.
+INFO - 2023-06-07 07:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 07:49:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-07 09:04:37 --> CSRF token verified.
+ERROR - 2023-06-07 09:04:37 --> mysqli_sql_exception: Column 'nama' cannot be null in D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `as...', 0)
+#1 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\ci-projectArel\app\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save(Array)
+#9 D:\ci-projectArel\app\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan(Array)
+#10 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+#11 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+#12 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\ci-projectArel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\ci-projectArel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectAr...')
+#15 {main}
+CRITICAL - 2023-06-07 09:04:37 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (:nim:, :nama:, :praktikum:, :ipk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan([...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 09:05:19 --> CSRF token verified.
+ERROR - 2023-06-07 09:05:19 --> mysqli_sql_exception: Column 'nama' cannot be null in D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `as...', 0)
+#1 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\ci-projectArel\app\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save(Array)
+#9 D:\ci-projectArel\app\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan(Array)
+#10 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+#11 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+#12 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\ci-projectArel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\ci-projectArel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectAr...')
+#15 {main}
+CRITICAL - 2023-06-07 09:05:19 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (:nim:, :nama:, :praktikum:, :ipk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan([...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 09:05:37 --> CSRF token verified.
+ERROR - 2023-06-07 09:05:37 --> mysqli_sql_exception: Column 'nama' cannot be null in D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `as...', 0)
+#1 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\ci-projectArel\app\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save(Array)
+#9 D:\ci-projectArel\app\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan(Array)
+#10 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+#11 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+#12 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\ci-projectArel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\ci-projectArel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectAr...')
+#15 {main}
+CRITICAL - 2023-06-07 09:05:37 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (:nim:, :nama:, :praktikum:, :ipk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan([...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 09:15:14 --> CSRF token verified.
+ERROR - 2023-06-07 09:15:14 --> mysqli_sql_exception: Column 'nama' cannot be null in D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `as...', 0)
+#1 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\ci-projectArel\app\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save(Array)
+#9 D:\ci-projectArel\app\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan(Array)
+#10 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+#11 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+#12 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\ci-projectArel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\ci-projectArel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectAr...')
+#15 {main}
+CRITICAL - 2023-06-07 09:15:14 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (:nim:, :nama:, :praktikum:, :ipk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan([...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 09:15:38 --> CSRF token verified.
+ERROR - 2023-06-07 09:15:38 --> mysqli_sql_exception: Column 'nama' cannot be null in D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `as...', 0)
+#1 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\ci-projectArel\app\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save(Array)
+#9 D:\ci-projectArel\app\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan(Array)
+#10 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+#11 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+#12 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\ci-projectArel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\ci-projectArel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectAr...')
+#15 {main}
+CRITICAL - 2023-06-07 09:15:38 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'215314113\', NULL, \'Platform\', \'3\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (:nim:, :nama:, :praktikum:, :ipk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AsistenModel.php(17): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AsistenController.php(32): App\Models\AsistenModel->simpan([...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 09:31:37 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:00:02 --> Too few arguments to function App\Controllers\AsistenController::update(), 0 passed in D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AsistenController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:09:40 --> CSRF token verified.
+INFO - 2023-06-07 11:10:07 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:11:19 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('asisten/update', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-06-07 11:15:02 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('asisten/update', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-06-07 11:15:11 --> Too few arguments to function App\Controllers\AsistenController::update(), 0 passed in D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AsistenController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:17:46 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:18:33 --> Too few arguments to function App\Controllers\AsistenController::update(), 0 passed in D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AsistenController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:20:42 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:20:42 --> Invalid file: "/asisten.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/asisten.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/asisten', [], true)
+ 3 APPPATH\Controllers\AsistenController.php(33): view('/asisten')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->simpan()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:25:51 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:25:51 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\AsistenController.php on line 34.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\ci-projectArel\\app\\Controllers\\AsistenController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\AsistenController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\AsistenController')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\AsistenController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:26:02 --> CSRF token verified.
+INFO - 2023-06-07 11:27:05 --> CSRF token verified.
+INFO - 2023-06-07 11:27:40 --> CSRF token verified.
+INFO - 2023-06-07 11:28:40 --> CSRF token verified.
+INFO - 2023-06-07 11:33:16 --> CSRF token verified.
+INFO - 2023-06-07 11:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-07 11:39:48 --> Too few arguments to function App\Controllers\AsistenController::update(), 0 passed in D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\AsistenController.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:50:14 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:50:14 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 1680.
+ 1 SYSTEMPATH\BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray(null, 'update')
+ 3 SYSTEMPATH\Model.php(756): CodeIgniter\BaseModel->update([...], null)
+ 4 APPPATH\Controllers\AsistenController.php(56): CodeIgniter\Model->update([...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:51:08 --> CSRF token verified.
+INFO - 2023-06-07 11:53:07 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:53:07 --> Call to a member function update() on null
+in APPPATH\Controllers\AsistenController.php on line 55.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-06-07 11:54:35 --> Invalid file: "/asisten/hapus.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('/asisten/hapus.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('/asisten/hapus', [], true)
+ 3 APPPATH\Controllers\AsistenController.php(56): view('/asisten/hapus')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 11:55:19 --> CSRF token verified.
+CRITICAL - 2023-06-07 11:55:19 --> Call to a member function update() on null
+in APPPATH\Controllers\AsistenController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 12:22:32 --> CSRF token verified.
+CRITICAL - 2023-06-07 12:22:32 --> Call to a member function perbarui() on null
+in APPPATH\Controllers\AsistenController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 12:24:26 --> CSRF token verified.
+CRITICAL - 2023-06-07 12:24:26 --> Call to a member function perbarui() on null
+in APPPATH\Controllers\AsistenController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 12:26:18 --> CSRF token verified.
+CRITICAL - 2023-06-07 12:26:18 --> Call to a member function perbarui() on null
+in APPPATH\Controllers\AsistenController.php on line 49.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 12:41:36 --> CSRF token verified.
+ERROR - 2023-06-07 12:41:36 --> mysqli_sql_exception: Duplicate entry '21' for key 'PRIMARY' in D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `as...', 0)
+#1 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `as...')
+#2 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `as...')
+#3 D:\ci-projectArel\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `as...', Array, false)
+#4 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 D:\ci-projectArel\vendor\codeigniter4\framework\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\ci-projectArel\vendor\codeigniter4\framework\system\BaseModel.php(692): CodeIgniter\Model->insert(Array, false)
+#8 D:\ci-projectArel\app\Models\AsistenModel.php(32): CodeIgniter\BaseModel->save(Array)
+#9 D:\ci-projectArel\app\Controllers\AsistenController.php(53): App\Models\AsistenModel->perbarui(Array)
+#10 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+#11 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+#12 D:\ci-projectArel\vendor\codeigniter4\framework\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\ci-projectArel\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#14 D:\ci-projectArel\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectAr...')
+#15 {main}
+CRITICAL - 2023-06-07 12:41:36 --> Duplicate entry '21' for key 'PRIMARY'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'21\', \'oooooo\', \'okoko\', \'2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'21\', \'oooooo\', \'okoko\', \'2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (\'21\', \'oooooo\', \'okoko\', \'2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `asisten` (`nim`, `nama`, `praktikum`, `ipk`) VALUES (:nim:, :nama:, :praktikum:, :ipk:)', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(692): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Models\AsistenModel.php(32): CodeIgniter\BaseModel->save([...])
+10 APPPATH\Controllers\AsistenController.php(53): App\Models\AsistenModel->perbarui([...])
+11 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AsistenController->update()
+12 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AsistenController))
+13 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+INFO - 2023-06-07 12:49:10 --> CSRF token verified.
+INFO - 2023-06-07 12:51:26 --> CSRF token verified.
+INFO - 2023-06-07 12:51:50 --> CSRF token verified.
+INFO - 2023-06-07 12:52:41 --> CSRF token verified.

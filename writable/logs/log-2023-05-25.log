@@ -1,0 +1,32 @@
+CRITICAL - 2023-05-25 05:59:53 --> Undefined array key "pesan"
+in APPPATH\Controllers\PesanController.php on line 9.
+ 1 APPPATH\Controllers\PesanController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'D:\\ci-projectArel\\app\\Controllers\\PesanController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesanController->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesanController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-25 06:02:27 --> Undefined array key "pesan"
+in APPPATH\Controllers\PesanController.php on line 9.
+ 1 APPPATH\Controllers\PesanController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'D:\\ci-projectArel\\app\\Controllers\\PesanController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesanController->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesanController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-25 06:03:01 --> Undefined array key "pesan"
+in APPPATH\Controllers\PesanController.php on line 9.
+ 1 APPPATH\Controllers\PesanController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'D:\\ci-projectArel\\app\\Controllers\\PesanController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesanController->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesanController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
+CRITICAL - 2023-05-25 06:03:24 --> Undefined array key "pesan"
+in APPPATH\Controllers\PesanController.php on line 9.
+ 1 APPPATH\Controllers\PesanController.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pesan"', 'D:\\ci-projectArel\\app\\Controllers\\PesanController.php', 9)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\PesanController->proses()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesanController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\ci-projectArel\\public\\index.php')
